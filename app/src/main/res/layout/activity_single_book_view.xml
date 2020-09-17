@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleBookView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/loading"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:id="@+id/naslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="34sp"
+                android:layout_gravity="center"
+                android:text="Naslov"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author : "
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/numberOfPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author : "
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:padding="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"/>
+
+            <TextView
+                android:id="@+id/longDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author : "
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:padding="5dp"/>
+
+            <Button
+                android:id="@+id/orderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Buy Now"
+                android:padding="5dp"
+                android:textSize="21sp"
+                android:textColor="#0000EE"
+                android:background="#92f9fc"
+                android:alpha="0.5"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
